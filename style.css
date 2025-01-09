@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    background-color: #f0f0f0;     /* Color de fondo */
+    text-align: center;            /* Centrar el texto */
+    padding: 20px;                 /* Espaciado interno */
+    margin: 0;                     /* Quitar márgenes por defecto */
+  }
+  
+  /* Estilo para los encabezados (h1) */
+  h1 {
+    color: #4CAF50;  /* Color verde */
+    font-size: 36px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  
+  /* Estilo para los párrafos */
+  p {
+    color: #555;    /* Color gris oscuro */
+    font-size: 18px; /* Tamaño de letra */
+    line-height: 1.6; /* Espaciado entre líneas */
+  }
+  
+  /* Estilo para el botón */
+  button {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white;              /* Texto blanco */
+    border: none;              /* Sin bordes */
+    padding: 10px 20px;        /* Espaciado interno */
+    font-size: 16px;           /* Tamaño de fuente */
+    border-radius: 5px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambiar cursor al pasar */
+    transition: background-color 0.3s; /* Efecto de transición */
+  }
+  
+  /* Cambiar el color del botón al pasar el mouse */
+  button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+  }
+  
+  /* Estilo para la versión móvil (dispositivos pequeños) */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+  
+    h1 {
+      font-size: 24px; /* Reducir el tamaño del encabezado */
+    }
+  
+    p {
+      font-size: 16px; /* Reducir el tamaño del párrafo */
+    }
+  
+    button {
+      font-size: 14px; /* Reducir el tamaño del texto del botón */
+      padding: 8px 16px; /* Ajustar el espaciado del botón */
+    }
+  }
+  

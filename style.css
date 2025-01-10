@@ -1,59 +1,53 @@
-body {
-    font-family: Arial, sans-serif; /* Tipo de fuente */
-    background-color: #f0f0f0;     /* Color de fondo */
-    text-align: center;            /* Centrar el texto */
-    padding: 20px;                 /* Espaciado interno */
-    margin: 0;                     /* Quitar márgenes por defecto */
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+  --size: max(5px, 1vmin);
+  --height: 80em;
+  --pad: 1.25em;
+  --border-radius: 6.666em;
+  --gutter: calc(var(--pad) * 2);
+  --button-width: 0.333em;
+  --notch-height: 3.33em;
+  --notch-width: 33.3%;
+  --notch-radius: calc(var(--border-radius) - calc(var(--pad) * 2));
+  --notch-duration: 0.333s;
+  --ease: cubic-bezier(.666, 0, .4, 1);
+  --ease-spring: cubic-bezier(.666, 0, .4, 1.2);
+  --ease-out: cubic-bezier(.15, 0, .333, 1);
+  --border-width: 0.4em;
+  --deep-purple: 284;
+  --gold: 30;
+  --space-black: 215;
+  --silver: 254;
+  --c-h: var(--deep-purple);
+  --c-s: 100%;
+  --c-l: 50%;
+}
+
+@-webkit-keyframes appear{
+  to{
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
-  
-  /* Estilo para los encabezados (h1) */
-  h1 {
-    color: #4CAF50;  /* Color verde */
-    font-size: 36px; /* Tamaño de fuente */
-    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+@keyframes appear {
+  to{
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
-  
-  /* Estilo para los párrafos */
-  p {
-    color: #555;    /* Color gris oscuro */
-    font-size: 18px; /* Tamaño de letra */
-    line-height: 1.6; /* Espaciado entre líneas */
-  }
-  
-  /* Estilo para el botón */
-  button {
-    background-color: #4CAF50; /* Fondo verde */
-    color: white;              /* Texto blanco */
-    border: none;              /* Sin bordes */
-    padding: 10px 20px;        /* Espaciado interno */
-    font-size: 16px;           /* Tamaño de fuente */
-    border-radius: 5px;        /* Bordes redondeados */
-    cursor: pointer;           /* Cambiar cursor al pasar */
-    transition: background-color 0.3s; /* Efecto de transición */
-  }
-  
-  /* Cambiar el color del botón al pasar el mouse */
-  button:hover {
-    background-color: #45a049; /* Verde más oscuro */
-  }
-  
-  /* Estilo para la versión móvil (dispositivos pequeños) */
-  @media (max-width: 600px) {
-    body {
-      font-size: 14px; /* Reducir el tamaño de fuente */
-    }
-  
-    h1 {
-      font-size: 24px; /* Reducir el tamaño del encabezado */
-    }
-  
-    p {
-      font-size: 16px; /* Reducir el tamaño del párrafo */
-    }
-  
-    button {
-      font-size: 14px; /* Reducir el tamaño del texto del botón */
-      padding: 8px 16px; /* Ajustar el espaciado del botón */
-    }
-  }
-  
+}
+
+body{
+  background: #00000a;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Inter';
+  font-size: var(--size);
+}
+
